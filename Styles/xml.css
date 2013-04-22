@@ -1,0 +1,22 @@
+﻿NewDataSet
+{
+    }
+Stock
+{
+    }
+Stock
+{
+  width:200px;
+  border-radius:10px;
+  background-color:#ccc;
+  
+ }
+ 
+ StockID
+ {
+   font-size:1.5em;
+   font-family:@Arial Unicode MS;
+   color:Fuchsia;
+   display:block;
+   padding:3px;
+   }

@@ -1,0 +1,88 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeFile="Site.Master.vb" Inherits="Site" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/bootstrap.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <nav class=" navbar navbar-inverse navbar-fixed-top">
+                <div class="navbar-inner">
+                    <div class="nav container menu">
+                    <!--this checks to see if there is a logged in user, if not, the Nav is not displayed -->
+                        <% If Not IsNothing(Membership.GetUser()) Then%>
+                        
+                        <asp:Menu ID="NavigationMenu" runat="server" CssClass="unstyled menu dropdown-toggle" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                            <Items>
+                                <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home"/>
+                                <asp:MenuItem NavigateUrl="~/About.aspx" Text="About"/>
+                                <asp:MenuItem NavigateUrl="~/Customers.aspx" Text="Customers">
+                                    <asp:MenuItem NavigateUrl="~/CustomerEntry.aspx" Text="Add a New Customer" 
+                                        Value="Add a New Customer" ></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Prints4bitches.aspx" Text="Stock Items" 
+                                    Value="Stock Items">
+                                    <asp:MenuItem NavigateUrl="~/AllStock.aspx" Text="Stock Layer" 
+                                        Value="Stock Layer"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/dataentry.aspx" Text="Add Stock" Value="Add Stock">
+                                    </asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/Prints4bitches.aspx" Text="Product List" 
+                                        Value="Product List"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/CustomerDetails.aspx" Text="Order Views" 
+                                    Value="Order Views"/>
+                                <asp:MenuItem NavigateUrl="~/DatabasetoXML.aspx" Text="XML Converter">
+                                    <asp:MenuItem NavigateUrl="~/XMLReader.aspx" Target="_blank" 
+                                        Text="Edit XML Stock " Value="Edit XML Stock "></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/XML2HTMLCSS.aspx" Text="Stock Table" 
+                                        Value="Stock Table"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/ADOsuppliers.aspx" Text="Supplier Info"/>
+                            </Items>
+                        </asp:Menu>
+                        <% End If %>
+                    </div>
+                </div>
+            </nav>
+            <div class="jumbotron masthead">
+                <div class="container clearfix">
+                    <h1>
+                        My Sexy App
+                    </h1>
+                </div>
+            </div>
+            <div class="loginDisplay pull-right">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        <a href="~/Account/Login.aspx" ID="HeadLoginStatus" class="btn btn-small btn-info" runat="server">Log In</a> 
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                    <div>
+                       <p>Welcome <span class="bold"><asp:LoginName ID="HeadLoginName"  runat="server" /></span>!
+                         <asp:LoginStatus ID="HeadLoginStatus" runat="server" class="btn btn-small btn-success" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> </p>
+                    </div> 
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+            
+        </div>
+        <div class="main container">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer  modal-footer clearfix">
+        <div class="container">
+            <p>Copyright 2010 - 2013</p>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

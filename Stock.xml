@@ -1,0 +1,91 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Stock>
+    <StockID>Sloth Print</StockID>
+    <Description>lorem ipsum dolor est sit amet</Description>
+    <Stock_level>33</Stock_level>
+    <SupplierID>10</SupplierID>
+    <Image_url>gato.jpg</Image_url>
+    <Price>133</Price>
+  </Stock>
+  <Stock>
+    <StockID>Brain Print</StockID>
+    <Description>A print of a Brain</Description>
+    <Stock_level>123</Stock_level>
+    <SupplierID>10</SupplierID>
+    <Image_url>gato.jpg</Image_url>
+    <Price>22</Price>
+  </Stock>
+  <Stock>
+    <StockID>Pug Print</StockID>
+    <Description>quasi architecto beatae vitae dicta sunt explicabo</Description>
+    <Stock_level>22</Stock_level>
+    <SupplierID>6</SupplierID>
+    <Image_url>gato.jpg</Image_url>
+    <Price>300</Price>
+  </Stock>
+  <Stock>
+    <StockID>Kitten Print</StockID>
+    <Description>enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</Description>
+    <Stock_level>6</Stock_level>
+    <SupplierID>5</SupplierID>
+    <Image_url>gato.jpg</Image_url>
+    <Price>300</Price>
+  </Stock>
+  <Stock>
+    <StockID>Cat Print</StockID>
+    <Description>perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</Description>
+    <Stock_level>10</Stock_level>
+    <SupplierID>1</SupplierID>
+    <Image_url>gato.jpg</Image_url>
+    <Price>100</Price>
+  </Stock>
+  <Stock>
+    <StockID>Cow Print</StockID>
+    <Description>otam rem aperiam, eaque ipsa quae ab illo inventore veritatis</Description>
+    <Stock_level>50</Stock_level>
+    <SupplierID>2</SupplierID>
+    <Image_url>gato.jpg</Image_url>
+    <Price>100</Price>
+  </Stock>
+  <Stock>
+    <StockID>Snail Print</StockID>
+    <Description>enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam</Description>
+    <Stock_level>7</Stock_level>
+    <SupplierID>7</SupplierID>
+    <Image_url>gato.jpg</Image_url>
+    <Price>120</Price>
+  </Stock>
+  <Stock>
+    <StockID>Dog Print</StockID>
+    <Description>autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur</Description>
+    <Stock_level>403</Stock_level>
+    <SupplierID>3</SupplierID>
+    <Image_url>gato.jpg</Image_url>
+    <Price>120</Price>
+  </Stock>
+  <Stock>
+    <StockID>Ghost Print</StockID>
+    <Description>sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem</Description>
+    <Stock_level>1</Stock_level>
+    <SupplierID>8</SupplierID>
+    <Image_url>gato.jpg</Image_url>
+    <Price>75</Price>
+  </Stock>
+  <Stock>
+    <StockID>Pig Print</StockID>
+    <Description>sed quia consequuntur magni dolores eos qui ratione voluptatem</Description>
+    <Stock_level>7</Stock_level>
+    <SupplierID>9</SupplierID>
+    <Image_url>gato.jpg</Image_url>
+    <Price>50</Price>
+  </Stock>
+  <Stock>
+    <StockID>Fruit Print</StockID>
+    <Description>porro quisquam est, qui dolorem ipsum quia dolor sit amet</Description>
+    <Stock_level>13</Stock_level>
+    <SupplierID>4</SupplierID>
+    <Image_url>gato.jpg</Image_url>
+    <Price>50</Price>
+  </Stock>
+</NewDataSet>
